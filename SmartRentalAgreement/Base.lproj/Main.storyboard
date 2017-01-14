@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKG-bG-LQK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKG-bG-LQK">
                                 <rect key="frame" x="155" y="240" width="65" height="30"/>
                                 <state key="normal" title="LandLord"/>
                             </button>
@@ -43,6 +43,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ix0-gM-9PX" firstAttribute="top" secondItem="oKG-bG-LQK" secondAttribute="bottom" constant="48" id="3GE-XL-Vac"/>
+                            <constraint firstItem="oKG-bG-LQK" firstAttribute="centerX" secondItem="uXX-lC-yge" secondAttribute="centerX" id="6GC-Ox-NlB"/>
                             <constraint firstItem="Ix0-gM-9PX" firstAttribute="centerX" secondItem="uXX-lC-yge" secondAttribute="centerX" id="8eX-c1-I2c"/>
                             <constraint firstItem="LAR-5h-q6y" firstAttribute="top" secondItem="D4a-7v-IvB" secondAttribute="bottom" constant="8" id="BKd-A1-bKA"/>
                             <constraint firstItem="Ix0-gM-9PX" firstAttribute="centerY" secondItem="uXX-lC-yge" secondAttribute="centerY" id="HRr-O8-CYU"/>
@@ -156,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="2359.1999999999998" y="-181.25937031484258"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="XTP-Uv-Kxn">
             <objects>
-                <viewController id="ZeS-3X-e4F" sceneMemberID="viewController">
+                <viewController id="ZeS-3X-e4F" customClass="PropertyHistoryViewController" customModule="SmartRentalAgreement" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pRD-k0-FnO"/>
                         <viewControllerLayoutGuide type="bottom" id="x70-Dg-sCP"/>
@@ -169,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdZ-w5-lcd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,15 +181,16 @@
                             <constraint firstItem="LdZ-w5-lcd" firstAttribute="top" secondItem="pRD-k0-FnO" secondAttribute="bottom" id="wZa-yH-Szz"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="WHk-W3-meG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxb-Kj-KlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2359" y="-883"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="pSh-bv-sgE">
             <objects>
-                <viewController id="PNt-TJ-hxB" sceneMemberID="viewController">
+                <viewController id="PNt-TJ-hxB" customClass="RequisitionViewController" customModule="SmartRentalAgreement" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UWH-EG-wka"/>
                         <viewControllerLayoutGuide type="bottom" id="Cha-dG-eHC"/>
@@ -198,7 +200,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Wl-6Q-neg">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -209,6 +211,7 @@
                             <constraint firstAttribute="trailing" secondItem="0Wl-6Q-neg" secondAttribute="trailing" id="qUj-SZ-Kis"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="5M8-1A-7ND"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyR-9d-dsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,6 +228,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="GZH-bz-OOb" kind="relationship" relationship="viewControllers" id="deH-bf-rWN"/>
+                        <segue destination="ZeS-3X-e4F" kind="relationship" relationship="viewControllers" id="rco-2x-yzo"/>
+                        <segue destination="PNt-TJ-hxB" kind="relationship" relationship="viewControllers" id="Hb3-4G-Nhx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lII-iT-B1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
