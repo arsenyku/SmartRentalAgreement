@@ -6,20 +6,18 @@
 //  Copyright © 2017 SmartRentalAgreement. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
-class ViewController: NSViewController {
+class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view, typically from a nib.
   }
 
-  override var representedObject: Any? {
-    didSet {
-    // Update the view, if already loaded.
-    }
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
   }
 
 
