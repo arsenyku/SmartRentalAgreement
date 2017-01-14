@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -127,7 +128,7 @@
             </objects>
             <point key="canvasLocation" x="633" y="-181"/>
         </scene>
-        <!--Item-->
+        <!--Payment-->
         <scene sceneID="hLo-g8-DgK">
             <objects>
                 <viewController id="GZH-bz-OOb" customClass="PaymentViewController" customModule="SmartRentalAgreement" customModuleProvider="target" sceneMemberID="viewController">
@@ -139,19 +140,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyW-By-cyd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Balance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4L-Eg-IUE">
+                                <rect key="frame" x="16" y="28" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJ9-Kl-aRN">
+                                <rect key="frame" x="154" y="28" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount Due: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZD-hl-utL">
+                                <rect key="frame" x="16" y="57" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Payment Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ve-C2w">
+                                <rect key="frame" x="16" y="86" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuh-9J-KM7">
+                                <rect key="frame" x="177" y="86" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBr-gp-xi4">
+                                <rect key="frame" x="16" y="180" width="343" height="430"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="430" id="WPF-vO-Ie6"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR4-TF-OQg">
+                                <rect key="frame" x="126" y="57" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KyW-By-cyd" firstAttribute="leading" secondItem="tcA-4a-3gM" secondAttribute="leading" id="Dr4-48-fDP"/>
-                            <constraint firstAttribute="trailing" secondItem="KyW-By-cyd" secondAttribute="trailing" id="Mp7-Km-6Zc"/>
-                            <constraint firstItem="KyW-By-cyd" firstAttribute="top" secondItem="uNu-yK-U0Q" secondAttribute="bottom" id="c0L-sW-KL5"/>
-                            <constraint firstItem="8T6-Px-z5W" firstAttribute="top" secondItem="KyW-By-cyd" secondAttribute="bottom" id="jil-9N-Rax"/>
+                            <constraint firstItem="YJ9-Kl-aRN" firstAttribute="centerY" secondItem="I4L-Eg-IUE" secondAttribute="centerY" id="29P-Dx-PoW"/>
+                            <constraint firstItem="lBr-gp-xi4" firstAttribute="leading" secondItem="tcA-4a-3gM" secondAttribute="leadingMargin" id="3fr-qi-t5T"/>
+                            <constraint firstItem="w8h-Ve-C2w" firstAttribute="top" secondItem="SZD-hl-utL" secondAttribute="bottom" constant="8" id="7S9-lw-3Al"/>
+                            <constraint firstItem="Yuh-9J-KM7" firstAttribute="centerY" secondItem="w8h-Ve-C2w" secondAttribute="centerY" id="9kR-Vm-DfQ"/>
+                            <constraint firstItem="YJ9-Kl-aRN" firstAttribute="leading" secondItem="I4L-Eg-IUE" secondAttribute="trailing" constant="5" id="Dxm-1W-SvZ"/>
+                            <constraint firstItem="SZD-hl-utL" firstAttribute="top" secondItem="I4L-Eg-IUE" secondAttribute="bottom" constant="8" id="Jlb-oZ-ud6"/>
+                            <constraint firstItem="lBr-gp-xi4" firstAttribute="trailing" secondItem="tcA-4a-3gM" secondAttribute="trailingMargin" id="PFx-lN-rBr"/>
+                            <constraint firstItem="SZD-hl-utL" firstAttribute="leading" secondItem="I4L-Eg-IUE" secondAttribute="leading" id="Wwm-5s-GvF"/>
+                            <constraint firstItem="I4L-Eg-IUE" firstAttribute="top" secondItem="uNu-yK-U0Q" secondAttribute="bottom" constant="8" id="bQO-Xi-gXJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="I4L-Eg-IUE" secondAttribute="leading" id="cjU-R2-5BW"/>
+                            <constraint firstItem="Yuh-9J-KM7" firstAttribute="leading" secondItem="w8h-Ve-C2w" secondAttribute="trailing" constant="5" id="d7W-x3-i7b"/>
+                            <constraint firstItem="cR4-TF-OQg" firstAttribute="centerY" secondItem="SZD-hl-utL" secondAttribute="centerY" id="jjm-yp-OIH"/>
+                            <constraint firstItem="lBr-gp-xi4" firstAttribute="top" secondItem="w8h-Ve-C2w" secondAttribute="bottom" constant="73" id="k7V-VE-ju6"/>
+                            <constraint firstItem="8T6-Px-z5W" firstAttribute="top" secondItem="lBr-gp-xi4" secondAttribute="bottom" constant="8" id="m2e-7I-9Oo"/>
+                            <constraint firstItem="w8h-Ve-C2w" firstAttribute="leading" secondItem="I4L-Eg-IUE" secondAttribute="leading" id="rDw-jd-xLK"/>
+                            <constraint firstItem="cR4-TF-OQg" firstAttribute="leading" secondItem="SZD-hl-utL" secondAttribute="trailing" constant="5" id="umU-FA-pgQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="JD6-Ds-COo"/>
+                    <tabBarItem key="tabBarItem" title="Payment" id="JD6-Ds-COo"/>
+                    <connections>
+                        <outlet property="NextPaymentDueLabel" destination="Yuh-9J-KM7" id="q5b-jT-OnX"/>
+                        <outlet property="amountDueLabel" destination="cR4-TF-OQg" id="xa1-n9-ZCZ"/>
+                        <outlet property="currentBalanceLabel" destination="YJ9-Kl-aRN" id="8vF-PK-grS"/>
+                        <outlet property="webView" destination="lBr-gp-xi4" id="JcL-Fw-FFr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNG-m1-THn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
