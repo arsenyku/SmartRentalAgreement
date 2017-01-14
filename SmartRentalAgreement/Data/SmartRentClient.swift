@@ -10,6 +10,8 @@ import Foundation
 
 class SmartRentClient
 {
+  static var propertyData:[String:Any]? = nil
+  
   func requestHistory(forProperty:String, completion: @escaping (Dictionary<String,Any>) -> Void) -> Void
   {
     let _ = URLSession.download(fromAddress: "http://10.10.42.198:3000/property_history", completionHandler: { (data, response, error) -> Void in
@@ -21,6 +23,7 @@ class SmartRentClient
       
       completion(jsonDictionary)
       
+      SmartRentClient.propertyData = jsonDictionary
     })
   }
 
