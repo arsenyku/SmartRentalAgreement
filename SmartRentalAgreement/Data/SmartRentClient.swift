@@ -8,7 +8,7 @@
 
 import Foundation
 
-func requestHistory(forTenant tenant:String, completion: @escaping (Dictionary<String,String>) -> Void)
+func requestHistory(forProperty:String, completion: @escaping (Dictionary<String,String>) -> Void)
 {
   
 }
