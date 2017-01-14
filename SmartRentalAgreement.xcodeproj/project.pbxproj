@@ -11,7 +11,6 @@
 		128E15F61E2ACC1000907FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128E15F41E2ACC1000907FB1 /* Main.storyboard */; };
 		128E15F81E2ACC1000907FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128E15F71E2ACC1000907FB1 /* Assets.xcassets */; };
 		128E15FB1E2ACC1000907FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128E15F91E2ACC1000907FB1 /* LaunchScreen.storyboard */; };
-		55F50B6D1E2AD3370062FCD7 /* rtb1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 55F50B6C1E2AD3370062FCD7 /* rtb1.pdf */; };
 		55F50B6F1E2AD4280062FCD7 /* LeaseAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B6E1E2AD4280062FCD7 /* LeaseAgreementViewController.swift */; };
 		55F50B711E2AD84E0062FCD7 /* TenantHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B701E2AD84E0062FCD7 /* TenantHistoryViewController.swift */; };
 		55F50B731E2AD88B0062FCD7 /* LandLordHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B721E2AD88B0062FCD7 /* LandLordHistoryViewController.swift */; };
@@ -19,6 +18,7 @@
 		55F50B771E2AD9080062FCD7 /* RequisitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B761E2AD9080062FCD7 /* RequisitionViewController.swift */; };
 		55F50B791E2AD9240062FCD7 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B781E2AD9240062FCD7 /* PaymentViewController.swift */; };
 		55F50B7B1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B7A1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift */; };
+		55F50B7E1E2AE0A50062FCD7 /* rtb1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 55F50B7D1E2AE0A50062FCD7 /* rtb1.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,6 @@
 		128E15F71E2ACC1000907FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128E15FA1E2ACC1000907FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128E15FC1E2ACC1000907FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55F50B6C1E2AD3370062FCD7 /* rtb1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = rtb1.pdf; sourceTree = "<group>"; };
 		55F50B6E1E2AD4280062FCD7 /* LeaseAgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaseAgreementViewController.swift; sourceTree = "<group>"; };
 		55F50B701E2AD84E0062FCD7 /* TenantHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenantHistoryViewController.swift; sourceTree = "<group>"; };
 		55F50B721E2AD88B0062FCD7 /* LandLordHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandLordHistoryViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		55F50B761E2AD9080062FCD7 /* RequisitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequisitionViewController.swift; path = ../RequisitionViewController.swift; sourceTree = "<group>"; };
 		55F50B781E2AD9240062FCD7 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentViewController.swift; path = ../PaymentViewController.swift; sourceTree = "<group>"; };
 		55F50B7A1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExitAgreementViewViewController.swift; path = ../ExitAgreementViewViewController.swift; sourceTree = "<group>"; };
+		55F50B7D1E2AE0A50062FCD7 /* rtb1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = rtb1.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 				128E15F71E2ACC1000907FB1 /* Assets.xcassets */,
 				128E15F91E2ACC1000907FB1 /* LaunchScreen.storyboard */,
 				128E15FC1E2ACC1000907FB1 /* Info.plist */,
-				55F50B6C1E2AD3370062FCD7 /* rtb1.pdf */,
+				55F50B7D1E2AE0A50062FCD7 /* rtb1.pdf */,
 			);
 			path = SmartRentalAgreement;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				128E15FB1E2ACC1000907FB1 /* LaunchScreen.storyboard in Resources */,
-				55F50B6D1E2AD3370062FCD7 /* rtb1.pdf in Resources */,
+				55F50B7E1E2AE0A50062FCD7 /* rtb1.pdf in Resources */,
 				128E15F81E2ACC1000907FB1 /* Assets.xcassets in Resources */,
 				128E15F61E2ACC1000907FB1 /* Main.storyboard in Resources */,
 			);

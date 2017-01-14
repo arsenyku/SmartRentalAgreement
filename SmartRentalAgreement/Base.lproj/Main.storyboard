@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PdC-CF-vbU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cse-Hd-kCK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,12 +21,38 @@
                     <view key="view" contentMode="scaleToFill" id="uXX-lC-yge">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKG-bG-LQK">
+                                <rect key="frame" x="155" y="240" width="65" height="30"/>
+                                <state key="normal" title="LandLord"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix0-gM-9PX">
+                                <rect key="frame" x="164" y="318" width="47" height="30"/>
+                                <state key="normal" title="Tenant"/>
+                                <connections>
+                                    <segue destination="PdC-CF-vbU" kind="show" id="e2B-xF-LpI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who R U? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAR-5h-q6y">
+                                <rect key="frame" x="147" y="28" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ix0-gM-9PX" firstAttribute="top" secondItem="oKG-bG-LQK" secondAttribute="bottom" constant="48" id="3GE-XL-Vac"/>
+                            <constraint firstItem="Ix0-gM-9PX" firstAttribute="centerX" secondItem="uXX-lC-yge" secondAttribute="centerX" id="8eX-c1-I2c"/>
+                            <constraint firstItem="LAR-5h-q6y" firstAttribute="top" secondItem="D4a-7v-IvB" secondAttribute="bottom" constant="8" id="BKd-A1-bKA"/>
+                            <constraint firstItem="Ix0-gM-9PX" firstAttribute="centerY" secondItem="uXX-lC-yge" secondAttribute="centerY" id="HRr-O8-CYU"/>
+                            <constraint firstItem="LAR-5h-q6y" firstAttribute="centerX" secondItem="uXX-lC-yge" secondAttribute="centerX" id="i4q-VZ-TPE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhQ-gu-Euv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="-178"/>
+            <point key="canvasLocation" x="-167.19999999999999" y="-178.56071964017991"/>
         </scene>
         <!--Lease Agreement View Controller-->
         <scene sceneID="rzi-XJ-1oJ">
@@ -53,7 +79,7 @@
                                         <rect key="frame" x="167" y="547" width="41" height="31"/>
                                         <state key="normal" title="Agree"/>
                                         <connections>
-                                            <segue destination="GZH-bz-OOb" kind="show" id="Ipd-h0-DGo"/>
+                                            <segue destination="03m-eg-UBd" kind="show" id="Ipd-h0-DGo"/>
                                         </connections>
                                     </button>
                                     <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awF-lX-9O3">
@@ -100,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="633" y="-181"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="hLo-g8-DgK">
             <objects>
-                <viewController id="GZH-bz-OOb" sceneMemberID="viewController">
+                <viewController id="GZH-bz-OOb" customClass="PaymentViewController" customModule="SmartRentalAgreement" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uNu-yK-U0Q"/>
                         <viewControllerLayoutGuide type="bottom" id="8T6-Px-z5W"/>
@@ -113,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyW-By-cyd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -124,10 +150,11 @@
                             <constraint firstItem="8T6-Px-z5W" firstAttribute="top" secondItem="KyW-By-cyd" secondAttribute="bottom" id="jil-9N-Rax"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="JD6-Ds-COo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNG-m1-THn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1420" y="-181"/>
+            <point key="canvasLocation" x="2359.1999999999998" y="-181.25937031484258"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XTP-Uv-Kxn">
@@ -156,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxb-Kj-KlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207" y="-181"/>
+            <point key="canvasLocation" x="2359" y="-883"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pSh-bv-sgE">
@@ -185,7 +212,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyR-9d-dsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="-181"/>
+            <point key="canvasLocation" x="2358" y="-1563"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ode-ja-8eV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="03m-eg-UBd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kid-bF-hkX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GZH-bz-OOb" kind="relationship" relationship="viewControllers" id="deH-bf-rWN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lII-iT-B1e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="-181.25937031484258"/>
         </scene>
     </scenes>
 </document>
