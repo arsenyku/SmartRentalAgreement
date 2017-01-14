@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "26AB250F15967ECA9773DAF276FE43D4C38C3A72",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "46CF0F0810A97942529AAC158DB568AF3659B16F" : 9223372036854775807,
+    "26AB250F15967ECA9773DAF276FE43D4C38C3A72" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "944CDE82-4DE5-4B0C-B75A-96C364791016",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "46CF0F0810A97942529AAC158DB568AF3659B16F" : "..",
+    "26AB250F15967ECA9773DAF276FE43D4C38C3A72" : "SmartRentalAgreement\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SmartRentalAgreement",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SmartRentalAgreement.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/arsenyku\/SmartRentalAgreement.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "26AB250F15967ECA9773DAF276FE43D4C38C3A72"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/michael_thompson_\/hack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "46CF0F0810A97942529AAC158DB568AF3659B16F"
+    }
+  ]
+}

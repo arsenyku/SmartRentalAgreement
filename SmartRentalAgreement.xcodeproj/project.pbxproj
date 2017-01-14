@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		128E15F11E2ACC1000907FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E15F01E2ACC1000907FB1 /* AppDelegate.swift */; };
-		128E15F31E2ACC1000907FB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E15F21E2ACC1000907FB1 /* ViewController.swift */; };
 		128E15F61E2ACC1000907FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128E15F41E2ACC1000907FB1 /* Main.storyboard */; };
 		128E15F81E2ACC1000907FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128E15F71E2ACC1000907FB1 /* Assets.xcassets */; };
 		128E15FB1E2ACC1000907FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128E15F91E2ACC1000907FB1 /* LaunchScreen.storyboard */; };
+		55F50B6D1E2AD3370062FCD7 /* rtb1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 55F50B6C1E2AD3370062FCD7 /* rtb1.pdf */; };
+		55F50B6F1E2AD4280062FCD7 /* LeaseAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B6E1E2AD4280062FCD7 /* LeaseAgreementViewController.swift */; };
+		55F50B711E2AD84E0062FCD7 /* TenantHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B701E2AD84E0062FCD7 /* TenantHistoryViewController.swift */; };
+		55F50B731E2AD88B0062FCD7 /* LandLordHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B721E2AD88B0062FCD7 /* LandLordHistoryViewController.swift */; };
+		55F50B751E2AD8B20062FCD7 /* PropertyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B741E2AD8B20062FCD7 /* PropertyHistoryViewController.swift */; };
+		55F50B771E2AD9080062FCD7 /* RequisitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B761E2AD9080062FCD7 /* RequisitionViewController.swift */; };
+		55F50B791E2AD9240062FCD7 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B781E2AD9240062FCD7 /* PaymentViewController.swift */; };
+		55F50B7B1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F50B7A1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		128E15ED1E2ACC1000907FB1 /* SmartRentalAgreement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRentalAgreement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		128E15F01E2ACC1000907FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		128E15F21E2ACC1000907FB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		128E15F51E2ACC1000907FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		128E15F71E2ACC1000907FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128E15FA1E2ACC1000907FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128E15FC1E2ACC1000907FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F50B6C1E2AD3370062FCD7 /* rtb1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = rtb1.pdf; sourceTree = "<group>"; };
+		55F50B6E1E2AD4280062FCD7 /* LeaseAgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaseAgreementViewController.swift; sourceTree = "<group>"; };
+		55F50B701E2AD84E0062FCD7 /* TenantHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TenantHistoryViewController.swift; sourceTree = "<group>"; };
+		55F50B721E2AD88B0062FCD7 /* LandLordHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandLordHistoryViewController.swift; sourceTree = "<group>"; };
+		55F50B741E2AD8B20062FCD7 /* PropertyHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyHistoryViewController.swift; sourceTree = "<group>"; };
+		55F50B761E2AD9080062FCD7 /* RequisitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequisitionViewController.swift; path = ../RequisitionViewController.swift; sourceTree = "<group>"; };
+		55F50B781E2AD9240062FCD7 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaymentViewController.swift; path = ../PaymentViewController.swift; sourceTree = "<group>"; };
+		55F50B7A1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExitAgreementViewViewController.swift; path = ../ExitAgreementViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +69,28 @@
 			isa = PBXGroup;
 			children = (
 				128E15F01E2ACC1000907FB1 /* AppDelegate.swift */,
-				128E15F21E2ACC1000907FB1 /* ViewController.swift */,
 				128E15F41E2ACC1000907FB1 /* Main.storyboard */,
+				55F50B7C1E2AD9550062FCD7 /* ViewControllers */,
 				128E15F71E2ACC1000907FB1 /* Assets.xcassets */,
 				128E15F91E2ACC1000907FB1 /* LaunchScreen.storyboard */,
 				128E15FC1E2ACC1000907FB1 /* Info.plist */,
+				55F50B6C1E2AD3370062FCD7 /* rtb1.pdf */,
 			);
 			path = SmartRentalAgreement;
+			sourceTree = "<group>";
+		};
+		55F50B7C1E2AD9550062FCD7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55F50B6E1E2AD4280062FCD7 /* LeaseAgreementViewController.swift */,
+				55F50B761E2AD9080062FCD7 /* RequisitionViewController.swift */,
+				55F50B7A1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift */,
+				55F50B781E2AD9240062FCD7 /* PaymentViewController.swift */,
+				55F50B701E2AD84E0062FCD7 /* TenantHistoryViewController.swift */,
+				55F50B721E2AD88B0062FCD7 /* LandLordHistoryViewController.swift */,
+				55F50B741E2AD8B20062FCD7 /* PropertyHistoryViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				128E15FB1E2ACC1000907FB1 /* LaunchScreen.storyboard in Resources */,
+				55F50B6D1E2AD3370062FCD7 /* rtb1.pdf in Resources */,
 				128E15F81E2ACC1000907FB1 /* Assets.xcassets in Resources */,
 				128E15F61E2ACC1000907FB1 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				128E15F31E2ACC1000907FB1 /* ViewController.swift in Sources */,
+				55F50B791E2AD9240062FCD7 /* PaymentViewController.swift in Sources */,
+				55F50B751E2AD8B20062FCD7 /* PropertyHistoryViewController.swift in Sources */,
+				55F50B771E2AD9080062FCD7 /* RequisitionViewController.swift in Sources */,
+				55F50B731E2AD88B0062FCD7 /* LandLordHistoryViewController.swift in Sources */,
+				55F50B7B1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift in Sources */,
+				55F50B711E2AD84E0062FCD7 /* TenantHistoryViewController.swift in Sources */,
 				128E15F11E2ACC1000907FB1 /* AppDelegate.swift in Sources */,
+				55F50B6F1E2AD4280062FCD7 /* LeaseAgreementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +338,7 @@
 				128E16011E2ACC1000907FB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
