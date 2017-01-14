@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124797161E2AE30D0083C6C3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124797141E2AE30D0083C6C3 /* Network.swift */; };
+		124797171E2AE30D0083C6C3 /* SmartRentClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124797151E2AE30D0083C6C3 /* SmartRentClient.swift */; };
 		128E15F11E2ACC1000907FB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128E15F01E2ACC1000907FB1 /* AppDelegate.swift */; };
 		128E15F61E2ACC1000907FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128E15F41E2ACC1000907FB1 /* Main.storyboard */; };
 		128E15F81E2ACC1000907FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128E15F71E2ACC1000907FB1 /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		124797141E2AE30D0083C6C3 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Network.swift; path = Data/Network.swift; sourceTree = "<group>"; };
+		124797151E2AE30D0083C6C3 /* SmartRentClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmartRentClient.swift; path = Data/SmartRentClient.swift; sourceTree = "<group>"; };
 		128E15ED1E2ACC1000907FB1 /* SmartRentalAgreement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRentalAgreement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		128E15F01E2ACC1000907FB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		128E15F51E2ACC1000907FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124797181E2AE3140083C6C3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				124797141E2AE30D0083C6C3 /* Network.swift */,
+				124797151E2AE30D0083C6C3 /* SmartRentClient.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		128E15E41E2ACC1000907FB1 = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +81,10 @@
 		128E15EF1E2ACC1000907FB1 /* SmartRentalAgreement */ = {
 			isa = PBXGroup;
 			children = (
+				124797181E2AE3140083C6C3 /* Data */,
+				55F50B7C1E2AD9550062FCD7 /* ViewControllers */,
 				128E15F01E2ACC1000907FB1 /* AppDelegate.swift */,
 				128E15F41E2ACC1000907FB1 /* Main.storyboard */,
-				55F50B7C1E2AD9550062FCD7 /* ViewControllers */,
 				128E15F71E2ACC1000907FB1 /* Assets.xcassets */,
 				128E15F91E2ACC1000907FB1 /* LaunchScreen.storyboard */,
 				128E15FC1E2ACC1000907FB1 /* Info.plist */,
@@ -168,10 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F50B791E2AD9240062FCD7 /* PaymentViewController.swift in Sources */,
+				124797171E2AE30D0083C6C3 /* SmartRentClient.swift in Sources */,
 				55F50B751E2AD8B20062FCD7 /* PropertyHistoryViewController.swift in Sources */,
 				55F50B771E2AD9080062FCD7 /* RequisitionViewController.swift in Sources */,
 				55F50B731E2AD88B0062FCD7 /* LandLordHistoryViewController.swift in Sources */,
 				55F50B7B1E2AD9420062FCD7 /* ExitAgreementViewViewController.swift in Sources */,
+				124797161E2AE30D0083C6C3 /* Network.swift in Sources */,
 				55F50B711E2AD84E0062FCD7 /* TenantHistoryViewController.swift in Sources */,
 				128E15F11E2ACC1000907FB1 /* AppDelegate.swift in Sources */,
 				55F50B6F1E2AD4280062FCD7 /* LeaseAgreementViewController.swift in Sources */,
