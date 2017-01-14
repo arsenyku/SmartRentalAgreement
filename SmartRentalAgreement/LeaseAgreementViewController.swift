@@ -19,6 +19,8 @@ class LeaseAgreementViewController: UIViewController {
             webView.loadRequest(request as URLRequest)
             webView.setNeedsDisplay()
         }
+      
+        
     }
 
 
