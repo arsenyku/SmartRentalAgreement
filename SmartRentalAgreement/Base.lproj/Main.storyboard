@@ -14,7 +14,7 @@
         <!--Selection View Controller-->
         <scene sceneID="8Kc-Oc-Qxo">
             <objects>
-                <viewController id="cse-Hd-kCK" customClass="SelectionViewController" sceneMemberID="viewController">
+                <viewController id="cse-Hd-kCK" customClass="SelectionViewController" customModule="SmartRentalAgreement" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D4a-7v-IvB"/>
                         <viewControllerLayoutGuide type="bottom" id="CKv-d0-LMx"/>
