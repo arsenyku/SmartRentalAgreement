@@ -10,5 +10,6 @@ import UIKit
 
 class HistoryCell:UITableViewCell
 {
-  
+  @IBOutlet weak var propertyName: UILabel!
+  @IBOutlet weak var leaseDuration: UILabel!
 }
