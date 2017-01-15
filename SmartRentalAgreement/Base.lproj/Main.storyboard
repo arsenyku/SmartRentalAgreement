@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cse-Hd-kCK">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cse-Hd-kCK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -85,7 +85,7 @@
                                         </connections>
                                     </button>
                                     <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awF-lX-9O3">
-                                        <rect key="frame" x="8" y="37" width="359" height="485.5"/>
+                                        <rect key="frame" x="8" y="37" width="359" height="486"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </webView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOE-7E-N7o">
@@ -158,49 +158,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Payment Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ve-C2w">
-                                <rect key="frame" x="16" y="86" width="156" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Payment Date on: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8h-Ve-C2w">
+                                <rect key="frame" x="16" y="86" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuh-9J-KM7">
-                                <rect key="frame" x="177" y="86" width="11" height="21"/>
+                                <rect key="frame" x="201" y="86" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBr-gp-xi4">
-                                <rect key="frame" x="16" y="180" width="343" height="430"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="250" constant="430" id="WPF-vO-Ie6"/>
-                                </constraints>
-                            </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR4-TF-OQg">
                                 <rect key="frame" x="126" y="57" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZl-ek-vLR">
+                                <rect key="frame" x="5" y="253" width="365" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make A Payment " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-fU-dOO">
+                                <rect key="frame" x="121" y="224" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cN-6v-yQc">
+                                <rect key="frame" x="5.5" y="291" width="365" height="30"/>
+                                <state key="normal" title="Submit Payment "/>
+                                <connections>
+                                    <action selector="submitPaymentTapped:" destination="GZH-bz-OOb" eventType="touchUpInside" id="TrC-rX-3bg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YJ9-Kl-aRN" firstAttribute="centerY" secondItem="I4L-Eg-IUE" secondAttribute="centerY" id="29P-Dx-PoW"/>
-                            <constraint firstItem="lBr-gp-xi4" firstAttribute="leading" secondItem="tcA-4a-3gM" secondAttribute="leadingMargin" id="3fr-qi-t5T"/>
                             <constraint firstItem="w8h-Ve-C2w" firstAttribute="top" secondItem="SZD-hl-utL" secondAttribute="bottom" constant="8" id="7S9-lw-3Al"/>
+                            <constraint firstItem="Ftw-fU-dOO" firstAttribute="centerX" secondItem="tcA-4a-3gM" secondAttribute="centerX" id="9Jh-4n-bfi"/>
+                            <constraint firstItem="gZl-ek-vLR" firstAttribute="top" secondItem="Ftw-fU-dOO" secondAttribute="bottom" constant="8" id="9Md-GJ-UaD"/>
                             <constraint firstItem="Yuh-9J-KM7" firstAttribute="centerY" secondItem="w8h-Ve-C2w" secondAttribute="centerY" id="9kR-Vm-DfQ"/>
                             <constraint firstItem="YJ9-Kl-aRN" firstAttribute="leading" secondItem="I4L-Eg-IUE" secondAttribute="trailing" constant="5" id="Dxm-1W-SvZ"/>
                             <constraint firstItem="SZD-hl-utL" firstAttribute="top" secondItem="I4L-Eg-IUE" secondAttribute="bottom" constant="8" id="Jlb-oZ-ud6"/>
-                            <constraint firstItem="lBr-gp-xi4" firstAttribute="trailing" secondItem="tcA-4a-3gM" secondAttribute="trailingMargin" id="PFx-lN-rBr"/>
+                            <constraint firstItem="Ftw-fU-dOO" firstAttribute="top" secondItem="w8h-Ve-C2w" secondAttribute="bottom" constant="117" id="NwN-Id-4eo"/>
+                            <constraint firstItem="0cN-6v-yQc" firstAttribute="width" secondItem="gZl-ek-vLR" secondAttribute="width" id="RSo-9c-Hvi"/>
+                            <constraint firstItem="gZl-ek-vLR" firstAttribute="leading" secondItem="tcA-4a-3gM" secondAttribute="leading" constant="5" id="VNH-rS-kf0"/>
                             <constraint firstItem="SZD-hl-utL" firstAttribute="leading" secondItem="I4L-Eg-IUE" secondAttribute="leading" id="Wwm-5s-GvF"/>
                             <constraint firstItem="I4L-Eg-IUE" firstAttribute="top" secondItem="uNu-yK-U0Q" secondAttribute="bottom" constant="8" id="bQO-Xi-gXJ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="I4L-Eg-IUE" secondAttribute="leading" id="cjU-R2-5BW"/>
                             <constraint firstItem="Yuh-9J-KM7" firstAttribute="leading" secondItem="w8h-Ve-C2w" secondAttribute="trailing" constant="5" id="d7W-x3-i7b"/>
+                            <constraint firstItem="0cN-6v-yQc" firstAttribute="centerX" secondItem="gZl-ek-vLR" secondAttribute="centerX" id="e9u-P7-yTY"/>
                             <constraint firstItem="cR4-TF-OQg" firstAttribute="centerY" secondItem="SZD-hl-utL" secondAttribute="centerY" id="jjm-yp-OIH"/>
-                            <constraint firstItem="lBr-gp-xi4" firstAttribute="top" secondItem="w8h-Ve-C2w" secondAttribute="bottom" constant="73" id="k7V-VE-ju6"/>
-                            <constraint firstItem="8T6-Px-z5W" firstAttribute="top" secondItem="lBr-gp-xi4" secondAttribute="bottom" constant="8" id="m2e-7I-9Oo"/>
                             <constraint firstItem="w8h-Ve-C2w" firstAttribute="leading" secondItem="I4L-Eg-IUE" secondAttribute="leading" id="rDw-jd-xLK"/>
+                            <constraint firstAttribute="trailing" secondItem="gZl-ek-vLR" secondAttribute="trailing" constant="5" id="s9C-98-08X"/>
+                            <constraint firstItem="0cN-6v-yQc" firstAttribute="top" secondItem="gZl-ek-vLR" secondAttribute="bottom" constant="8" id="tQj-Ax-HCq"/>
                             <constraint firstItem="cR4-TF-OQg" firstAttribute="leading" secondItem="SZD-hl-utL" secondAttribute="trailing" constant="5" id="umU-FA-pgQ"/>
                         </constraints>
                     </view>
@@ -209,7 +225,7 @@
                         <outlet property="NextPaymentDueLabel" destination="Yuh-9J-KM7" id="q5b-jT-OnX"/>
                         <outlet property="amountDueLabel" destination="cR4-TF-OQg" id="xa1-n9-ZCZ"/>
                         <outlet property="currentBalanceLabel" destination="YJ9-Kl-aRN" id="8vF-PK-grS"/>
-                        <outlet property="webView" destination="lBr-gp-xi4" id="JcL-Fw-FFr"/>
+                        <outlet property="textField" destination="gZl-ek-vLR" id="XRY-KV-RDp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNG-m1-THn" userLabel="First Responder" sceneMemberID="firstResponder"/>
