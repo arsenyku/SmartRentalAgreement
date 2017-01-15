@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +85,7 @@
                                         </connections>
                                     </button>
                                     <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awF-lX-9O3">
-                                        <rect key="frame" x="8" y="37" width="359" height="485.5"/>
+                                        <rect key="frame" x="8" y="37" width="359" height="486"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </webView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOE-7E-N7o">
@@ -169,43 +170,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LdZ-w5-lcd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-eu-ueZ">
-                                        <rect key="frame" x="75" y="99" width="240" height="394"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OzY-Od-RKI">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="394"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <prototypes>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cc0-7t-qfV">
-                                                    <rect key="frame" x="0.0" y="28" width="240" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc0-7t-qfV" id="k8M-0g-3jM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                    </tableViewCellContentView>
-                                                </tableViewCell>
-                                            </prototypes>
-                                        </tableView>
-                                    </tableView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="TJJ-eu-ueZ" firstAttribute="leading" secondItem="LdZ-w5-lcd" secondAttribute="leading" id="R9c-jD-BKr"/>
-                                    <constraint firstAttribute="bottom" secondItem="TJJ-eu-ueZ" secondAttribute="bottom" constant="20" id="TEe-ql-QtS"/>
-                                    <constraint firstAttribute="trailing" secondItem="TJJ-eu-ueZ" secondAttribute="trailing" id="WDq-Yv-ptW"/>
-                                    <constraint firstItem="TJJ-eu-ueZ" firstAttribute="top" secondItem="LdZ-w5-lcd" secondAttribute="top" constant="100" id="svn-lh-DZA"/>
-                                </constraints>
-                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-eu-ueZ">
+                                <rect key="frame" x="16" y="70" width="343" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cc0-7t-qfV" customClass="HistoryCell" customModule="SmartRentalAgreement" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc0-7t-qfV" id="k8M-0g-3jM">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LdZ-w5-lcd" firstAttribute="leading" secondItem="rDJ-8k-qai" secondAttribute="leading" id="BZ6-4b-sHV"/>
-                            <constraint firstItem="x70-Dg-sCP" firstAttribute="top" secondItem="LdZ-w5-lcd" secondAttribute="bottom" id="W9z-06-QML"/>
-                            <constraint firstAttribute="trailing" secondItem="LdZ-w5-lcd" secondAttribute="trailing" id="cgr-bg-FUX"/>
-                            <constraint firstItem="LdZ-w5-lcd" firstAttribute="top" secondItem="pRD-k0-FnO" secondAttribute="bottom" id="wZa-yH-Szz"/>
+                            <constraint firstItem="TJJ-eu-ueZ" firstAttribute="leading" secondItem="rDJ-8k-qai" secondAttribute="leadingMargin" id="1Ex-bO-ble"/>
+                            <constraint firstItem="TJJ-eu-ueZ" firstAttribute="top" secondItem="pRD-k0-FnO" secondAttribute="bottom" constant="50" id="hsi-ye-Kiv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TJJ-eu-ueZ" secondAttribute="trailing" id="uaN-WK-ygn"/>
+                            <constraint firstItem="x70-Dg-sCP" firstAttribute="top" secondItem="TJJ-eu-ueZ" secondAttribute="bottom" constant="10" id="zKC-NF-2Va"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" id="WHk-W3-meG"/>
