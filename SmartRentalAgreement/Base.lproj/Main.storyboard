@@ -157,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="2359.1999999999998" y="-181.25937031484258"/>
         </scene>
-        <!--Item-->
+        <!--History-->
         <scene sceneID="XTP-Uv-Kxn">
             <objects>
                 <viewController id="ZeS-3X-e4F" customClass="PropertyHistoryViewController" customModule="SmartRentalAgreement" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,8 +169,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdZ-w5-lcd">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LdZ-w5-lcd">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-eu-ueZ">
+                                        <rect key="frame" x="75" y="99" width="240" height="394"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OzY-Od-RKI">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="394"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <prototypes>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cc0-7t-qfV">
+                                                    <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc0-7t-qfV" id="k8M-0g-3jM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </tableViewCellContentView>
+                                                </tableViewCell>
+                                            </prototypes>
+                                        </tableView>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TJJ-eu-ueZ" firstAttribute="leading" secondItem="LdZ-w5-lcd" secondAttribute="leading" id="R9c-jD-BKr"/>
+                                    <constraint firstAttribute="bottom" secondItem="TJJ-eu-ueZ" secondAttribute="bottom" constant="20" id="TEe-ql-QtS"/>
+                                    <constraint firstAttribute="trailing" secondItem="TJJ-eu-ueZ" secondAttribute="trailing" id="WDq-Yv-ptW"/>
+                                    <constraint firstItem="TJJ-eu-ueZ" firstAttribute="top" secondItem="LdZ-w5-lcd" secondAttribute="top" constant="100" id="svn-lh-DZA"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -181,11 +208,11 @@
                             <constraint firstItem="LdZ-w5-lcd" firstAttribute="top" secondItem="pRD-k0-FnO" secondAttribute="bottom" id="wZa-yH-Szz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="WHk-W3-meG"/>
+                    <tabBarItem key="tabBarItem" title="History" id="WHk-W3-meG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxb-Kj-KlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2359" y="-883"/>
+            <point key="canvasLocation" x="2357.5999999999999" y="-883.80809595202402"/>
         </scene>
         <!--Item-->
         <scene sceneID="pSh-bv-sgE">
