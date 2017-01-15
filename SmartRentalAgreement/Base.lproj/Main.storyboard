@@ -232,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="2359.1999999999998" y="-181.25937031484258"/>
         </scene>
-        <!--Item-->
+        <!--History-->
         <scene sceneID="XTP-Uv-Kxn">
             <objects>
                 <viewController id="ZeS-3X-e4F" customClass="PropertyHistoryViewController" customModule="SmartRentalAgreement" customModuleProvider="target" sceneMemberID="viewController">
@@ -244,23 +244,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdZ-w5-lcd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="177" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-eu-ueZ">
+                                <rect key="frame" x="16" y="70" width="343" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="177" id="cc0-7t-qfV" customClass="HistoryCell" customModule="SmartRentalAgreement" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="177"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cc0-7t-qfV" id="k8M-0g-3jM">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="176"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVs-0j-pZu" userLabel="propertyName">
+                                                    <rect key="frame" x="8" y="8" width="327" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iW-RI-SsR" userLabel="leaseDuration">
+                                                    <rect key="frame" x="8" y="31" width="327" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="leaseDuration" destination="5iW-RI-SsR" id="BmM-cy-UD5"/>
+                                            <outlet property="propertyName" destination="OVs-0j-pZu" id="enR-3Z-AXE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LdZ-w5-lcd" firstAttribute="leading" secondItem="rDJ-8k-qai" secondAttribute="leading" id="BZ6-4b-sHV"/>
-                            <constraint firstItem="x70-Dg-sCP" firstAttribute="top" secondItem="LdZ-w5-lcd" secondAttribute="bottom" id="W9z-06-QML"/>
-                            <constraint firstAttribute="trailing" secondItem="LdZ-w5-lcd" secondAttribute="trailing" id="cgr-bg-FUX"/>
-                            <constraint firstItem="LdZ-w5-lcd" firstAttribute="top" secondItem="pRD-k0-FnO" secondAttribute="bottom" id="wZa-yH-Szz"/>
+                            <constraint firstItem="TJJ-eu-ueZ" firstAttribute="leading" secondItem="rDJ-8k-qai" secondAttribute="leadingMargin" id="1Ex-bO-ble"/>
+                            <constraint firstItem="TJJ-eu-ueZ" firstAttribute="top" secondItem="pRD-k0-FnO" secondAttribute="bottom" constant="50" id="hsi-ye-Kiv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TJJ-eu-ueZ" secondAttribute="trailing" id="uaN-WK-ygn"/>
+                            <constraint firstItem="x70-Dg-sCP" firstAttribute="top" secondItem="TJJ-eu-ueZ" secondAttribute="bottom" constant="10" id="zKC-NF-2Va"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="WHk-W3-meG"/>
+                    <tabBarItem key="tabBarItem" title="History" id="WHk-W3-meG"/>
+                    <connections>
+                        <outlet property="tableView" destination="TJJ-eu-ueZ" id="OOX-tD-Wjp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxb-Kj-KlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2359" y="-883"/>
+            <point key="canvasLocation" x="2357.5999999999999" y="-883.80809595202402"/>
         </scene>
         <!--Item-->
         <scene sceneID="pSh-bv-sgE">
