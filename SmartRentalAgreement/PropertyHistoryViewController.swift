@@ -115,9 +115,17 @@ class PropertyHistoryViewController: UIViewController, UITableViewDataSource {
     print ("-------------------")
     
     let propertyName = Array(propertyData.keys)[indexPath.row]
-//    let propertyDetails = propertyData[propertyName] as! [String:Any]
+    guard let propertyDetails = propertyData[propertyName],
+      let tenant = propertyDetails["tenant"] as? String,
+      let duration = propertyDetails["duration_of_lease"] as? Int
+      else { return HistoryCell() }
     
     cell.propertyName.text = "Property: \(propertyName)"
+    cell.tenant.text = "Tenant: \(tenant)"
+    cell.leaseDuration.text = "Lease Duration: \(duration)"
+
+    cell.req1.text = "Snow Removal - Response: 5 days (Resolved)"
+    cell.req2.text = "Plumbing Fix - Response: 1 days (Unresolved)"
     
     return cell
   }
