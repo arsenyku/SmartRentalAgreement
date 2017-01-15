@@ -54,7 +54,7 @@ class PaymentViewController: UIViewController {
         currentBalanceLabel.text = textField.text
         
         
-        }
+        
         
         
     
