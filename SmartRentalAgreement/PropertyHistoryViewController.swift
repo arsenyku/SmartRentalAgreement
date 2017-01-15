@@ -8,28 +8,118 @@
 
 import UIKit
 
-class PropertyHistoryViewController: UIViewController {
-
+class PropertyHistoryViewController: UIViewController, UITableViewDataSource {
+  
+  @IBOutlet weak var tableView: UITableView!
+  
+//  let presentableData = [String:[String:String]]
+  
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      super.viewDidLoad()
+  
+      self.tableView.dataSource = self
+      self.tableView.reloadData()
+      
     }
 
+  
+//      ["duration_of_lease":"0","tenant" = "Sarah Foot"]
+//      ["duration_of_lease":"4","tenant" = "Lisa Simpson"]
+//      ["duration_of_lease":"4","tenant" = "Joe Schmoe"]
+//      
+//      req1 =         {
+//        issue = "snow removal";
+//        resolved = 1;
+//        "response_time" = 1;
+//      };
+//      req2 =         {
+//        issue = "snow removal";
+//        resolved = 1;
+//        "response_time" = 2;
+//      };
+//      
+//      ["property3": ]
+//      
+//      
+//      "requisitions =     {
+//        };
+//;
+//        }, "property2": {
+//          "duration_of_lease" = 12;
+//          requisitions =     {
+//            req1 =         {
+//              issue = "snow removal";
+//              resolved = 1;
+//              "response_time" = 1;
+//            };
+//            req2 =         {
+//              issue = "snow removal";
+//              resolved = 1;
+//              "response_time" = 2;
+//            };
+//          };
+//          tenant = "Lisa Simpson";
+//        }, "property1": {
+//          "duration_of_lease" = 4;
+//          requisitions =     {
+//            req1 =         {
+//              issue = plumbing;
+//              resolved = 1;
+//              "response_time" = 5;
+//            };
+//            req2 =         {
+//              issue = roaches;
+//              resolved = 0;
+//              "response_time" = 100;
+//            };
+//            req3 =         {
+//              issue = nachos;
+//              resolved = 1;
+//              "response_time" = 1;
+//            };
+//          };
+//          tenant = "Joe Schmoe";
+//        }]
+
+    override func viewWillAppear(_ animated: Bool) {
+      print ("will appear")
+    }
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+  // MARK: Table View Data Source
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    guard let rows = SmartRentClient.propertyData?.count
+      else { return 0 }
+    return rows
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell") as? HistoryCell,
+      let propertyData = SmartRentClient.propertyData as? [String:[String:Any]]
+    else
+    {
+      return HistoryCell()
     }
-    */
-
+    
+    print ("===================")
+    print (propertyData)
+    print ("-------------------")
+    
+    let propertyName = Array(propertyData.keys)[indexPath.row]
+//    let propertyDetails = propertyData[propertyName] as! [String:Any]
+    
+    cell.propertyName.text = "Property: \(propertyName)"
+    
+    return cell
+  }
+  
 }
