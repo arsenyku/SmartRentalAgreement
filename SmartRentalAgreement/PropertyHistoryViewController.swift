@@ -124,8 +124,8 @@ class PropertyHistoryViewController: UIViewController, UITableViewDataSource {
     cell.tenant.text = "Tenant: \(tenant)"
     cell.leaseDuration.text = "Lease Duration: \(duration)"
 
-    cell.req1.text = "Snow Removal - Response: 5 days (Resolved)"
-    cell.req2.text = "Plumbing Fix - Response: 1 days (Unresolved)"
+    cell.req1.text = "Snow Removal - 5 days (Resolved)"
+    cell.req2.text = "Plumbing Fix - 1 day (Unresolved)"
     
     return cell
   }
