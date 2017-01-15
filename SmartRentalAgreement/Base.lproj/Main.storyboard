@@ -354,7 +354,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X6b-YO-YTa">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X6b-YO-YTa">
                                 <rect key="frame" x="117" y="319" width="242" height="29"/>
                                 <segments>
                                     <segment title="Low"/>
@@ -366,6 +366,7 @@
                         <constraints>
                             <constraint firstItem="bsH-3v-ivp" firstAttribute="leading" secondItem="jFp-J9-aE5" secondAttribute="leading" id="235-dj-oaH"/>
                             <constraint firstItem="gva-tO-XWa" firstAttribute="leading" secondItem="VhH-mN-Ix1" secondAttribute="trailing" constant="8" id="2dd-1O-akX"/>
+                            <constraint firstItem="X6b-YO-YTa" firstAttribute="centerY" secondItem="bsH-3v-ivp" secondAttribute="centerY" id="4Cq-y9-3OZ"/>
                             <constraint firstItem="gva-tO-XWa" firstAttribute="leading" secondItem="VhH-mN-Ix1" secondAttribute="trailing" constant="8" id="6Jb-sG-r0P"/>
                             <constraint firstItem="X6b-YO-YTa" firstAttribute="leading" secondItem="bsH-3v-ivp" secondAttribute="trailing" constant="16" id="6aU-Dv-df0"/>
                             <constraint firstItem="jVR-0H-pLh" firstAttribute="centerX" secondItem="BfU-6D-F3U" secondAttribute="centerX" id="7bS-hQ-kO6"/>
